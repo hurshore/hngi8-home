@@ -1,0 +1,613 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+/* Button Styles */
+.btn-1, .btn-2 {
+  padding: .75rem 1.7rem;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.btn-1 {
+  background-color: #00AEFF;
+}
+
+.btn-2 {
+  border: 1px solid #00AEFF;
+}
+
+.btn-1:hover {
+  background-color: transparent;
+  border: 1px solid #00AEFF;
+  color: white;
+}
+
+.btn-2:hover {
+  background-color: #00AEFF;
+  color: white
+}
+
+/* Section 1 */
+.section-1 {
+  background-color: #24116A;
+  color: white;
+  padding: 3rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.section-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-6deg);
+  z-index: -1;
+}
+
+.intro-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.intro-text h2 {
+  line-height: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text p {
+  margin-bottom: 3rem;
+}
+
+.intro-image img {
+  width: 100%;
+  background: transparent;
+}
+
+.buttons .btn-1 {
+  margin-right: 1rem;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown .card {
+  width: 150px;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  flex: 30%;
+}
+
+.countdown .card-footer {
+  background-color: #24116A;
+  color: white;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.countdown .card-footer h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Section 3 */
+.section-3 {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.section-3 p {
+  color: #5E5E5E;
+}
+
+.section-3 .card-header {
+  background-color: white;
+  border: none;
+}
+
+.section-3 .card-header img {
+  width: 50px;
+}
+
+.section-3 .card-gallery .card {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.section-3 .card-gallery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+/* section 4 */
+.section-4 {
+  margin-top: 5rem;
+  background-color: #24116A;
+  color: white;
+  padding: 3rem 0 4rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.section-4 .apply p {
+  color: #CDCDCD;
+}
+
+.section-4::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: skewY(-6deg);
+  z-index: -1;
+}
+
+.section-4 .apply {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+}
+
+.section-4 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 .card-footer {
+  background-color: #24116A;
+  text-align: center;
+}
+
+.section-4 .card-footer h4 {
+  font-size: 1.1rem;
+}
+
+.section-4 .card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-4 .card-body {
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 .card-gallery .card {
+  flex: 40%;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  max-width: 205px;
+}
+
+.section-4 .card-gallery .card-body p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4 .card-gallery .card-footer {
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+
+.false-arrow {
+  width: 24px;
+  height: 100%;;
+}
+
+/* section 5 */
+.section-5 {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.section-5 h3 {
+  margin-bottom: 2rem;
+}
+
+.section-5 p {
+  color: #5E5E5E;
+  margin-bottom: 2rem;
+}
+
+.section-5 .interns img {
+  width: 100%;
+}
+
+.section-5 button:hover {
+  color: #00AEFF;
+}
+
+/* section 6 */
+.section-6 {
+  margin-top: 3rem;
+  padding: 3rem 0;
+  background-color: #24116A;
+  color: white;
+  text-align: center;
+}
+
+.section-6 .row .col-md-6:first-child img {
+  width: 100%;
+}
+
+.section-6 h3 {
+  margin-bottom: 2rem;
+}
+
+.section-6 p {
+  color: #CDCDCD;
+  margin-bottom: 2rem;
+}
+
+/* section 7 */
+.section-7 {
+  margin-top: 5rem;
+}
+
+.section-7 h3 {
+  margin-bottom: 3rem;
+}
+
+.section-7 .card-header {
+  background-color: white;
+  border: none;
+}
+
+.section-7 .card-gallery .card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.section-7 p {
+  color: #595959;
+}
+
+/* Mentors */
+.mentors .slider-area {
+  background-color: #24116A;
+  color: white;
+  text-align: center;
+}
+
+.mentors .heading {
+  margin-bottom: 6rem;
+}
+
+.mentors p {
+  color: #DEDEDE;
+}
+
+.mentors .btn-2 {
+  margin-top: 5rem;
+}
+
+.mentors svg {
+  display: block;
+}
+
+.curved-lower { 
+  height: 100px;
+}
+
+p.head {
+  color: #00AEFF;
+  margin: 0;
+}
+
+.mentors .slider-area .social span {
+  margin-right: .75rem;
+}
+
+/* Carousel */
+.arrows {
+  position: absolute;
+  z-index: 1;
+  bottom: 3%;
+  right: 5%;
+  display: flex;
+  flex-flow: column;
+}
+
+.slider-area .image img:first-child {
+  width: 100%;
+}
+
+.slider-area .image .arrow img {
+  width: 30px;
+  margin: 0.2rem 0;
+}
+
+
+/* section 8 */
+.section-8 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.section-8 p {
+  color: #5E5E5E;
+}
+
+.section-8 .image {
+  display: flex;
+}
+
+.section-8 .image img {
+  width: 100%;
+}
+
+.section-8 button:hover {
+  color: #00AEFF;
+}
+
+/* section 9 */
+.section-9 {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: #084482;
+  text-align: center;
+}
+
+.section-9 p {
+  color: #272727;
+}
+
+.section-9 .card-header {
+  background-color: white;
+  border: none;
+  text-align: center;
+}
+
+.section-9 .card {
+  margin: 1rem 0;
+  padding: 2rem 0 1rem 0;
+}
+
+.section-9 .card-body {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-9 button:hover {
+  color: #00AEFF;
+}
+
+/* section 10 */
+.section-10 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.section-10 h3 {
+  margin-bottom: 2rem;
+}
+
+.section-10 p {
+  color: #5E5E5E;
+  margin-bottom: 2rem;
+}
+
+.section-10 button:hover {
+  color: #00AEFF;
+}
+
+.section-10 .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-10 .image-gallery img {
+  width: 100%;
+}
+
+.section-10 .image-gallery div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex: 33.33333%;
+  height: 100px;
+}
+
+.section-10 .image-gallery div:nth-child(odd) {
+  background-color: #99DFFF;
+}
+
+.section-10 .image-gallery div:nth-child(even) {
+  background-color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .countdown .card {
+    margin: 0 1rem !important;
+    flex: 0 1 auto;
+  }
+
+  .countdown {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-1 {
+    text-align: left;
+  }
+
+  .section-1 .intro-text button {
+    margin: 0;
+  }
+
+  .section-1 .intro-text .btn-1 {
+    margin-right: 1rem;
+  }
+
+  .countdown .card-footer h4 {
+    font-size: 1.5rem;
+  }
+
+  .section-3 {
+    text-align: left;
+  }
+
+  .section-3 .card-gallery {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .section-3 .card-gallery .card {
+    flex: 33.33333%;
+    margin: 1%;
+  }
+
+  .section-4 {
+    margin-top: 10rem;
+  }
+
+  .section-4 .card-gallery .card {
+    flex: 20%;
+  }
+
+  .section-5 .row {
+    flex-direction: row-reverse;
+  }
+
+  .section-5 .message h3 {
+    font-size: 1.2rem;
+  }
+
+  .section-5 .message {
+    margin: 0;
+  }
+
+  .section-5 .message p {
+    font-size: 0.875rem;
+  }
+
+  .section-4, .section-5, .section-6, .section-8, .section-10, .mentors .slider-area {
+    text-align: left;
+  }
+
+  .section-5 button, .section-6 button, .section-8 button, .section-10 button {
+    margin: 0;
+  }
+
+  .section-6 h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-7 .card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-7 .card-gallery .card {
+    flex: 48%;
+    margin: 1rem 1% 0 1%;
+  }
+
+  .section-8 .text-content p {
+    font-size: 0.875rem;
+  }
+
+  .section-8 .row {
+    flex-direction: row-reverse;
+  }
+
+  .section-1 .intro-text, .section-5 .interns,
+  .section-6 .image, .section-8 .image {
+    margin: 0 !important;
+  }
+
+  .section-9 .card-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-9 .card {
+    flex: 30%;
+    margin: 1%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro-text button {
+    margin-top: 2rem;
+  }
+
+  .section-3 .card-gallery .card {
+    flex: 30%;
+  }
+
+  .section-4 {
+    margin-top: 10rem;
+  }
+
+  .section-5 .message h3 {
+    font-size: 1.75rem;
+  }
+
+  .section-5 .message p {
+    font-size: 1rem;
+  }
+
+  .section-6 .row .col-md-6:nth-child(2) h3,
+  .section-6 .row .col-md-6:nth-child(2) p {
+    line-height: 2rem;
+  }
+
+  .section-7 .card-gallery .card {
+    flex: 48%;
+    margin: 1%;
+  }
+
+  .section-10 .image-gallery div {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-4 {
+    margin-top: 15rem;
+  }
+
+  .section-7 .card-gallery .card {
+    flex: 23%;
+    margin: 1%;
+  }
+}

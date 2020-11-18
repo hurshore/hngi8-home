@@ -1,0 +1,35 @@
+footer {
+    margin-top: 15rem;
+    background: #24116A;
+    color: white;
+    padding: 3rem 0 4rem 0;
+    position: relative;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transform: skewY(-6deg);
+    z-index: -1;
+}
+
+
+footer button {
+    color: white;
+    background-color: #00AEFF;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+footer .f-btn {
+    background-color: #00AEFF;
+}
